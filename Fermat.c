@@ -65,7 +65,7 @@ int main() {
     if (c==pow(g,5)) {
       printf("%lu^5 \t \t", g); g++; l=1;
     } else {
-      printf("%lu^4 + %lu \t", g-1, l); l++;
+      printf("%lu^5 + %lu \t", g-1, l); l++;
     }
     if (primeTest(c)==1) {
       printf("%lu || \t", c); k=1; pr=c; gap=nextPrime(c+1)-c;
