@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+// Using the square-root function to figure-out the sum of a number
 int main() {
   long unsigned input;
   printf("Input : "); scanf("%lu", &input);
@@ -19,13 +20,13 @@ int main() {
       counter++;
     }
     if (v==2) {
-      printf("[P2] : %lu = ", a);
+      printf("[S2] : %lu = ", a);
       for (long unsigned d = 0; d < c; d++) {
         printf("%lu + %lu + ", (primeList[d]-1)/2, (primeList[d]-1)/2 + 1);
       }
       printf("%lu\n", primeCounter);
     }
-    printf("[P%0.f] : %lu = ", v, a);
+    printf("[S%0.f] : %lu = ", v, a);
     for (long unsigned d = 0; d < c; d++) {
       printf("%lu + ", primeList[d]);
     }

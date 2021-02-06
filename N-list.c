@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+// Testing if a number is a prime (1) or not (0) using the square-root function
 int primeTest(long unsigned number) {
     long unsigned primeList[number];
     long unsigned counter=1, primeCounter=0, c=0;
@@ -28,6 +29,7 @@ int primeTest(long unsigned number) {
     return 1;
 }
 
+// Calculating the next prime after finding a prime
 long unsigned nextPrime(long unsigned c) {
   while (primeTest(c)!=1) {
     c++;
@@ -35,9 +37,10 @@ long unsigned nextPrime(long unsigned c) {
   return c;
 }
 
+// Inputing a list of three sub-groups of N : Odd(O), Primes(P) and Even(E), into a text-file.
 int main() {
   FILE *doc;
-  doc = fopen("List.txt", "w+");
+  doc = fopen("N-List.txt", "w+");
   long unsigned input, k=1, pr, gp=2, gap;
   printf("Input : "); scanf("%lu", &input);
   fprintf(doc, "N \t \t"); fprintf(doc, "O \t \t"); fprintf(doc, "P \t \t"); fprintf(doc, "E \n");

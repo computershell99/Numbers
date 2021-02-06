@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+// More generally, using the root function to figure-out the sum of a number, alongside the exp and the log functions.
 int main() {
   long unsigned input;
   long unsigned counter=1, primeCounter=0, c=0;
@@ -18,13 +19,13 @@ int main() {
       counter++;
     }
     if (v==2) {
-      printf("[P2] : %lu = ", input);
+      printf("[S2] : %lu = ", input);
       for (long unsigned d = 0; d < c; d++) {
         printf("%lu + %lu + ", (primeList[d]-1)/2, (primeList[d]-1)/2 + 1);
       }
       printf("%lu\n", primeCounter);
     }
-    printf("[P%0.f] : %lu = ", v, input);
+    printf("[S%0.f] : %lu = ", v, input);
     for (long unsigned d = 0; d < c; d++) {
       printf("%lu + ", primeList[d]);
     }
@@ -40,7 +41,7 @@ int main() {
     }
     counter++;
   }
-  printf("[P10] : %lu = ", input);
+  printf("[S10] : %lu = ", input);
   for (long unsigned d = 0; d < c; d++) {
     printf("%lu + ", primeList[d]);
   }
@@ -55,7 +56,7 @@ int main() {
     }
     counter++;
   }
-  printf("[P11] : %lu = ", input);
+  printf("[S11] : %lu = ", input);
   for (long unsigned d = 0; d < c; d++) {
     printf("%lu + ", primeList[d]);
   }
@@ -70,7 +71,7 @@ int main() {
     }
     counter++;
   }
-  printf("[P12] : %lu = ", input);
+  printf("[S12] : %lu = ", input);
   for (long unsigned d = 0; d < c; d++) {
     printf("%lu + ", primeList[d]);
   }

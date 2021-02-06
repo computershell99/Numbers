@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+// addition state calculated using the square-root function
 void addition(long unsigned number) {
     long unsigned primeList[number];
     long unsigned counter=1, primeCounter=0, c=0;
@@ -24,11 +25,11 @@ void addition(long unsigned number) {
     }
     printf("%lu\n", primeCounter);
 }
-
+// simple substraction state by substracting 1
 void substraction(long unsigned number) {
     printf("[-] %lu = %lu - 1 \n", number, number+1);
 }
-
+// the multiplication state consist of using the square-root function to find the divisors of a number
 void multiplication(long unsigned number) {
     long unsigned primeList[number];
     long unsigned counter=1, primeCounter=0, c=0;
@@ -49,13 +50,13 @@ void multiplication(long unsigned number) {
       }
     }
 }
-
+// the division state
 void division(long unsigned number) {
     for (long unsigned d = 1; d <= number; d++) {
       printf("[/] %lu = %lu * %lu + %lu \n", number, number/d, d, number%d);
     }
 }
-
+// Testing if a number is a prime (1) or not (0) using the square-root function
 int primeTest(long unsigned number) {
     long unsigned primeList[number];
     long unsigned counter=1, primeCounter=0, c=0;
@@ -82,6 +83,7 @@ int primeTest(long unsigned number) {
     return 1;
 }
 
+// Calculating multiple arithmetic states of a number.
 int main() {
   long unsigned input, d=0;
   printf("Input : "); scanf("%lu", &input);

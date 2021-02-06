@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+// a way into partitions
 int main() {
   long unsigned input;
   printf("Input : "); scanf("%lu", &input);

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+// Testing if a number is a prime (1) or not (0) using the square-root function
 int primeTest(long unsigned number) {
     long unsigned primeList[number];
     long unsigned counter=1, primeCounter=0, c=0;
@@ -27,7 +28,7 @@ int primeTest(long unsigned number) {
     }
     return 1;
 }
-
+// Calculating the next prime after finding a prime
 long unsigned nextPrime(long unsigned number) {
   while (primeTest(number)!=1) {
     number++;
@@ -35,6 +36,7 @@ long unsigned nextPrime(long unsigned number) {
   return number;
 }
 
+// Calculating the elements of the sum of every number from 1 until the given number, from primes and prime gaps.
 int main() {
   long unsigned input, g=0, f=0, e=1, a=0, primeSum=0;
   printf("Input : "); scanf("%lu", &input);
