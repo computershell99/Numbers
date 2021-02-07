@@ -3,7 +3,7 @@
 #include <math.h>
 
 // Illustrating Fermat's last theorem using the root funtion
-// For a given number : (a^(1/n) + b^(1/n)= f^(n) != c^(n) + d^(n)
+// For a given number that can be written as a power : (a^(1/n) + b^(1/n)= f^(n) != c^(n) + d^(n)
 int main() {
   long unsigned input, d=1, e=1, f=1, g=1, h=1, a=1, b=1, l=1;
   printf("Input : "); scanf("%lu", &input);
